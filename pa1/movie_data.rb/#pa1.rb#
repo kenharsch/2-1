@@ -1,0 +1,10 @@
+class movie_data
+
+  
+  attr_reader :users
+  
+  
+  
+  
+ 
+end
