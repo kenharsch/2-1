@@ -1,27 +1,17 @@
-
-
-
-
-
-
-
-
 #test file for movie_data pa1
 #Ken Harsch
 #kharsch@brandeis.edu
 
-require_relative 'movie_data'
+require_relative 'new_movie_data'
 
 m = MovieData.new
 m.load_data
-
-
+m.calc_popularity
+puts "pop of 242 = "
+puts m.popularity(242)
 m.top_ten
 m.bottom_ten
-puts "Popularity of Movie 328 is:"
-puts m.popularity(328)
-puts "The similarity rating between user 881250949186 and 879467295213 is:"
-puts m.similarity(881250949186, 879467295213)
+puts "Sim rating between 196 and 54: "
+puts m.similarity(196, 54)
 
-puts "The most similar program takes a loooong time to run, so I've held off here."
-#m.most_similar
+#m.most_similar(55)
