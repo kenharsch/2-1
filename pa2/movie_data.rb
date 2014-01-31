@@ -13,7 +13,6 @@ class MovieData
 		@user_list = []
 		@movie_list = []
         @popularity_list = Hash.new {|movie_id, rating|}
-        @similarity_list = Hash.new{|user_id, sim|}
 	end
 
 	def load_data
